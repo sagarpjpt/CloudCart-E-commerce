@@ -1,0 +1,5 @@
+1->install materialui and react-icons
+
+2-> !absolute -- ! tells the priority of this property is highest known as !important in vanilla css
+
+3-> 

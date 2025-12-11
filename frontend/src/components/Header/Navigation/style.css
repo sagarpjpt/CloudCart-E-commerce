@@ -1,0 +1,20 @@
+.categoryPanel button {
+    text-transform: capitalize !important;
+}
+
+.submenu Button {
+    text-transform: capitalize !important;
+}
+
+.inner_submenu {
+  top: 0px !important;
+  left: 120% !important;
+  opacity: 0 !important;
+  /* visibility: hidden; */
+}
+
+.submenu ul li:hover .inner_submenu {
+  left: 100% !important;
+  opacity: 1 !important;
+  /* visibility: visible; */
+}
