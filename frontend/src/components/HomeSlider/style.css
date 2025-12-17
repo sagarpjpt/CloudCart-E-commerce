@@ -1,0 +1,32 @@
+.sliderHome {
+    overflow: inherit !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+    transition: all 0.1s linear;
+    /* font-size: 22px !important; */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: #8F0177;
+    color: white !important;
+}
+
+.swiper-navigation-icon{
+    width: 12px !important;
+    color: #8F0177;
+    font-weight: 600 !important;
+}
+
+.swiper-button-next:hover .swiper-navigation-icon, .swiper-button-prev:hover .swiper-navigation-icon {
+    color: white !important;
+}

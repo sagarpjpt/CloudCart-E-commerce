@@ -51,8 +51,8 @@ const Navigation = () => {
                 </Link>
 
                 <div
-                  className="opacity-0 invisible group-hover:visible group-hover:opacity-100 submenu absolute top-[120%] left-[0%] min-w-[200px] bg-white shadow-md transform translate-y-2 group-hover:translate-y-0 
-                  transition-all duration-200 ease-out"
+                  className="opacity-0 invisible group-hover:visible group-hover:opacity-100 submenu absolute top-[120%] left-[0%] min-w-[175px] bg-white shadow-md transform translate-y-2 group-hover:translate-y-0 
+                  transition-all duration-200 ease-out z-50"
                 >
                   <ul>
                     <li className="list-none w-full relative hover:!text-[#8F0177]">
@@ -61,7 +61,7 @@ const Navigation = () => {
                           Men
                         </Button>
                       </Link>
-                      <div className="inner_submenu absolute min-w-[200px] bg-white shadow-md">
+                      <div className="inner_submenu absolute min-w-[175px] bg-white shadow-md z-50">
                         <ul>
                           <li className="list-none w-full ">
                             <Link className="w-full hover:!text-[#8F0177]" to={"/"}>

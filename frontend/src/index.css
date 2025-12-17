@@ -36,24 +36,10 @@
 
 :root {
   --primary: #8F0177;
-  --secondary: #DE1A58;
-  --accent: #F4B342;
-  --success: #016B61;
-
-  --background: #faf7ff; /* soft warm white */
-  --surface: #ffffff;    /* card / component background */
-  --text: #111111;       /* dark readable text */
 }
 
 .dark {
-  --primary: #DE1A58;    /* brighter for dark backgrounds */
-  --secondary: #F4B342;
-  --accent: #8F0177;
-  --success: #018C79;
-
-  --background: #0A021A; /* deep purple-black */
-  --surface: #160033;    /* elevated surface */
-  --text: #ffffff;
+  --primary: #DE1A58;
 }
 
 html {
@@ -62,45 +48,51 @@ html {
   background: var(--background);
 }
 
-h1 {
-  font-size: var(--text-4xl);
-  font-weight: var(--font-bold);
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: var(--text-3xl);
-  font-weight: var(--font-semibold);
-}
-
-h3 {
-  font-size: var(--text-2xl);
-  font-weight: var(--font-semibold);
-}
-
-h4 {
-  font-size: var(--text-xl);
-  font-weight: var(--font-medium);
-}
-
-h5 {
-  font-size: var(--text-lg);
-  font-weight: var(--font-medium);
-}
-
-h6 {
-  font-size: var(--text-base);
-  font-weight: var(--font-medium);
-}
-
 .link:hover {
   color: var(--primary);
 }
 
-/* .MuiBadge-badge {
-  background-color: red !important;
-} */
-
 body{
   overflow-x: hidden;
+}
+
+.container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.btn-org {
+  background: var(--primary) !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  transition: all 0.2s linear !important;
+}
+
+.btn-org:hover {
+  background-color: #fff !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+  scale: 1.1 !important;
+}
+
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.Mui-checked, .css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+  color: var(--primary) !important;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 13px !important;
 }
