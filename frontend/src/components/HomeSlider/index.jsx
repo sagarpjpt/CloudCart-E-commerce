@@ -11,7 +11,7 @@ const HomeSlider = () => {
   return (
     <>
       <div className="homeSlider py-4 pb-2">
-        <div className="container">
+        <div className="w-11/12 mx-auto">
           <Swiper
             navigation={true}
             modules={[Navigation, Autoplay]}

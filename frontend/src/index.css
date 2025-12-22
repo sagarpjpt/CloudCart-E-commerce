@@ -96,3 +96,21 @@ body{
 .MuiFormControlLabel-label {
   font-size: 13px !important;
 }
+
+.swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+}
+
+
+.homeSliderV2 .swiper-slide-active .info {
+  right: 0px !important;
+
+}
+
+.MuiFormControlLabel-label{
+  font-size: 0.9rem !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const HomeCatSlider = () => {
   return (
     <div className="homeCatSlider py-4 pb-8">
-      <div className="container">
+      <div className="w-11/12 mx-auto">
         <Swiper
           navigation={true}
           modules={[Navigation]}

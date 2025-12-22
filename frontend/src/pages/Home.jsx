@@ -8,6 +8,9 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import ProductSlider from "../components/ProductSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
+import HomeBanner2 from "../components/HomeSlider2";
+import banner6 from '../assets/banner6.jpg'
+import AdsBannerSliderV2 from "../components/AdsBannerSliderV2";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,6 +20,8 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import BlogItem from "../components/BlogItem";
 import Footer from "../components/Footer";
+
+import BannerBoxV2 from "../components/BannerBoxV2";
 
 const Home = () => {
   const [value, setValue] = React.useState("one");
@@ -28,6 +33,19 @@ const Home = () => {
   return (
     <div className="bg-[#f8e3f5]">
       <HomeSlider />
+
+      <section>
+        <div className="w-11/12 mx-auto flex items-center justify-center gap-5">
+          <div className="part1 w-[70%] py-4">
+            <HomeBanner2 />
+          </div>
+          <div className="w-[30%] flex flex-col gap-5 h-[490px]">
+            <BannerBoxV2 info={"left"} image={banner6} />
+            <BannerBoxV2 info={"left"} image={banner6} />
+          </div>
+        </div>
+      </section>
+
       <HomeCatSlider />
 
       <section className="bg-white pt-8">
@@ -120,7 +138,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer/>
+      {/* <Footer/> */}
 
     </div>
   );
